@@ -1,0 +1,48 @@
+<html>
+<title>First Page</title>
+<head> </head>
+<body>
+<form method=POST >
+    <p>hello</p>
+<b>First Name</b><input type="text" placeholder="First Name" id="t1" /><br><br>
+<b>Last Name</b><input type="text" placeholder="Last Name" id="t2" /><br><br>
+<b>Gender</b><input type="radio" id="g1" name="gen">Male</input><input type="radio" id="g2" name="gen">FeMale</input><br><br>
+<b>Date of Birth</b><input type="date" id="t3"/><br><br>
+<b>Phone</b><input type="number" placeholder="123456789" id="t4"/><br><br>
+<b>Email</b><input type="text" id="t5"/>
+<br><br>
+<b>Password</b><input type="password" id="t6"/><br><br>
+<input type="checkbox" id="cb" /><b>All Details are correct to best of my Knowledge</b><br><br>
+<input type="button" value="Submit" onclick="return valid()" /><input type="reset" value="Reset"/>
+</form>
+<script type="text/javascript">
+
+    document.write(document.domain);
+    
+    document.write(document.url);
+    document.write(document.title);
+    console.log    
+
+function valid(){
+var a=document.getElementById("t1").value;
+var b=document.getElementById("t2").value;
+if(a ==""){
+alert("Must have value");
+document.getElementById("t1").style.background = "red";
+return false;
+}
+if(b ==""){
+alert("Must have value");
+document.getElementById("t2").style.background = "red";
+return false;
+}
+alert("sucessfully submitted");
+}
+</script>
+</body>
+<footer>
+    // html example
+    <span>&#169;;</span>
+</footer>
+</html>
+
